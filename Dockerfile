@@ -128,8 +128,8 @@ COPY scripts/comfy-manager-set-mode.sh /usr/local/bin/comfy-manager-set-mode
 RUN chmod +x /usr/local/bin/comfy-manager-set-mode
 
 ############ CUSTOM
-git clone https://github.com/nakagawadev/comfyui_nakagawa /comfyui/custom_nodes/comfyui_nakagawa
-
+RUN git clone https://github.com/nakagawadev/comfyui_nakagawa /comfyui/custom_nodes/comfyui_nakagawa
+############
 
 # Set the default command to run when starting the container
 CMD ["/start.sh"]
